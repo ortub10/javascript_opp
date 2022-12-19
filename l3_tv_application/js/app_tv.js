@@ -1,10 +1,17 @@
 window.onload = function () {
-  crateAllMovies();
+  doApi();
 };
 
-const crateAllMovies = function () {
-  json_ar.forEach(function (item) {
-    // Creating movies from file json(but not real json, It just comes to simulate the same behavior)
+const doApi = function () {
+  let url = "http://fs1.co.il/bus/tv.php";
+  axios.get(url).then(function (resp) {
+    let json_ar = resp.data;
+    crateAllMovies(json_ar);
+  });
+};
+
+const crateAllMovies = function (_ar) {
+  _ar.forEach(function (item) {
     let movie = new TvClass(
       item.name,
       item.image,
@@ -14,6 +21,18 @@ const crateAllMovies = function () {
     );
     movie.render();
   });
+  // json_ar.forEach(function (item) {
+  //   // Creating movies from file json(but not real json, It just comes to simulate the same behavior)
+  //   let movie = new TvClass(
+  //     item.name,
+  //     item.image,
+  //     item.kind,
+  //     item.views,
+  //     item.descrption
+  //   );
+  //   movie.render();
+  // });
+  //---------------------------------------------
   // let movie1 = new TvClass(
   //   "The simpsons",
   //   "simpsons.jpg",
