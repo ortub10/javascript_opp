@@ -27,7 +27,7 @@ function createSalesMan() {
     "050-6598866"
   );
 
-  salesMan1.addToHtml();
+  salesMan2.addToHtml();
 }
 
 init();
