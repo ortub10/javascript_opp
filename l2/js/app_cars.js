@@ -8,6 +8,9 @@ function createCars() {
   car1.addToHtml();
   let car2 = CarClass("Lada", "blue", 1984, 1000);
   car2.addToHtml();
+
+  let car3 = new CarClassNew("Tesla", "silver", 2023, 10000);
+  car3.render();
 }
 
 function createSalesMan() {
