@@ -15,5 +15,16 @@ class TvClass {
     <h4>${this.title}</h4>
     <div>Type: ${this.type}</div>
     <div>Views: ${this.view}</div>`;
+    let btn = document.createElement("button");
+    btn.innerHTML = "More info";
+    btn.className = "btn btn-danger w-25";
+    div.append(btn);
+
+    btn.addEventListener(
+      "click",
+      function () {
+        alert(this.info);
+      }.bind(this)
+    );
   }
 }

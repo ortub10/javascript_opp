@@ -8,7 +8,16 @@ const crateAllMovies = function () {
     "simpsons.jpg",
     "Series",
     10000,
-    "simpsons info"
+    "simpsons info....."
   );
   movie1.render();
+
+  let movie2 = new TvClass(
+    "Narcos",
+    "narcos.jpg",
+    "Series",
+    20000,
+    "narcos info....."
+  );
+  movie2.render();
 };
