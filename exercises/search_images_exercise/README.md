@@ -19,3 +19,11 @@ Start search
 ![part3](https://user-images.githubusercontent.com/102150516/209310724-942c6b28-4b74-481a-b00a-99ab319146cf.png)
 
 ---
+
+## part 4:
+
+Adding loading, event "keydown" and link to image page
+
+![part4](https://user-images.githubusercontent.com/102150516/209318226-b335e487-b023-4c06-af15-e22316948779.png)
+
+---
