@@ -6,7 +6,7 @@
 
 ## part 2:
 
-Readding the api (םnly for the dog at the moment)
+Readding the api (only for the dog at the moment)
 
 ![part2](https://user-images.githubusercontent.com/102150516/209289078-bee62afc-218e-464d-bfe4-7811b4e49b9b.png)
 
