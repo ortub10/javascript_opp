@@ -1,17 +1,25 @@
 window.onload = function () {
-  callApi();
+  callApi("jets");
+  declareEvents();
 };
 
-function callApi() {
-  let url =
-    "https://pixabay.com/api/?key=32277654-0a92bc7a5119d6435baed9b55&q=dog&image_type=photo";
+function declareEvents() {
+  let search_btn = document.querySelector("#search_btn");
+  search_btn.addEventListener("click", function () {
+    let input_val = document.querySelector("#input_search").value;
+    callApi(input_val);
+  });
+}
+
+function callApi(_searchQ) {
+  let url = `https://pixabay.com/api/?key=32277654-0a92bc7a5119d6435baed9b55&q=${_searchQ}&image_type=photo`;
   axios.get(url).then(function (resp) {
-    console.log(resp.data.hits);
     createPics(resp.data.hits);
   });
 }
 
 function createPics(_ar) {
+  document.querySelector(".row").innerHTML = "";
   _ar.forEach(function (item) {
     let pic = new Pixa(".row", item);
     pic.render();

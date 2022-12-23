@@ -11,3 +11,11 @@ Readding the api (only for the dog at the moment)
 ![part2](https://user-images.githubusercontent.com/102150516/209289078-bee62afc-218e-464d-bfe4-7811b4e49b9b.png)
 
 ---
+
+## part 3:
+
+Start search
+
+![part3](https://user-images.githubusercontent.com/102150516/209310724-942c6b28-4b74-481a-b00a-99ab319146cf.png)
+
+---
