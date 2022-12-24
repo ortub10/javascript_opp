@@ -2,8 +2,18 @@ const tasks_ar = [];
 
 window.onload = function () {
   declareEvents();
+  checkLocal();
 };
 
+function checkLocal() {
+  if (localStorage["tasks"]) {
+    let _ar = JSON.parse(localStorage["tasks"]);
+    _ar.forEach(function (item) {
+      tasks_ar.push(item);
+    });
+    createTasks(tasks_ar);
+  }
+}
 const declareEvents = function () {
   let add_btn = document.querySelector("#add_btn");
   let reset_btn = document.querySelector("#reset_btn");
@@ -28,6 +38,8 @@ const declareEvents = function () {
 const createTasks = function (_ar) {
   document.querySelector("#id_parent").innerHTML = "";
   _ar = _.sortBy(_ar, "time");
+  //save in localStorage
+  localStorage.setItem("tasks", JSON.stringify(_ar));
   _ar.forEach(function (item) {
     let task = new Task("#id_parent", item);
     task.render();

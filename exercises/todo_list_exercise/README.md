@@ -21,3 +21,11 @@ Fix reset button to better, sort tasks by time with lodash library and add id to
 ![part3](https://user-images.githubusercontent.com/102150516/209448806-48fecac0-ea3d-4fe0-83a6-88abc9b69dcd.png)
 
 ---
+
+## part 4:
+
+Saving tha tasks array in local storage
+
+![part3](https://user-images.githubusercontent.com/102150516/209449265-0f60958e-f135-43f5-986a-506785c01391.png)
+
+---
