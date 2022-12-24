@@ -29,3 +29,11 @@ Saving tha tasks array in local storage
 ![part4](https://user-images.githubusercontent.com/102150516/209449315-5f8107df-170d-4bdc-8adb-03842571d7f1.png)
 
 ---
+
+## part 5:
+
+Removing single task
+
+![part5](https://user-images.githubusercontent.com/102150516/209449746-afe5a1bc-ef13-46c4-bfea-5c4276889a47.png)
+
+---

@@ -35,6 +35,15 @@ const declareEvents = function () {
   });
 };
 
+const delSinsleTask = function (_idDel) {
+  tasks_ar.forEach(function (item, i) {
+    if (item.id == _idDel) {
+      tasks_ar.splice(i, 1);
+    }
+  });
+  createTasks(tasks_ar);
+};
+
 const createTasks = function (_ar) {
   document.querySelector("#id_parent").innerHTML = "";
   _ar = _.sortBy(_ar, "time");
