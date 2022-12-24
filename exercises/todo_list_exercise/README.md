@@ -32,7 +32,7 @@ Saving tha tasks array in local storage
 
 ## part 5:
 
-Removing single task
+Removing single task by button X
 
 ![part5](https://user-images.githubusercontent.com/102150516/209449746-afe5a1bc-ef13-46c4-bfea-5c4276889a47.png)
 
